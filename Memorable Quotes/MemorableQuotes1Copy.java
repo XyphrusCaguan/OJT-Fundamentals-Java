@@ -38,7 +38,15 @@
               for (String quote : BibleQuotes) {
                 System.out.println(quote);
               }
-            } else {
+            } 
+            //Search
+            else if (args[0].equals("search")) {
+              System.out.println(args[1]);
+              if(BibleQuotes.contains(args[1])){
+                System.out.println("Content Found");
+              }
+            }
+            else {
               System.out.println("Error: Invalid parameter supplied.");
               System.out.println("Possible parameters: 'create', 'random', 'all'");
             }
