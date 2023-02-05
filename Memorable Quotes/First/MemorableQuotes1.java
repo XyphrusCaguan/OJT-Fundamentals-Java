@@ -4,7 +4,7 @@
           public static void main(String[] args) {
             if (args.length == 0) {
               System.out.println("Error: Please supply a parameter.");
-              System.out.println("Possible parameters: 'create', 'random', 'all' , 'search', 'csearch' ");
+              System.out.println("Possible parameters: 'create', 'random', 'all' , 'search', 'csearch', 'display' ");
               return;
             }
             
@@ -22,13 +22,13 @@
               createQuotes(BibleQuotes);
             } else if (args[0].equals("random")) {
               String myRandomQuote = getRandomQuote(BibleQuotes);
-              System.out.println("Random memorable quote: " + myRandomQuote);
+              System.out.println("Random bible verse: " + myRandomQuote);
             } else if (args[0].equals("all")) {
               if (BibleQuotes.isEmpty()) {
                 System.out.println("Error: Quotes array is empty. Please create quotes first.");
                 return;
               }
-              System.out.println("All memorable quotes:");
+              System.out.println("All bible verses:");
               for (String quote : BibleQuotes) {
                 System.out.println(quote);
               }
@@ -71,11 +71,23 @@
                 System.out.println("No results found.");
               }
             }
-   
+            
+            else if (args[0].equals("display")) {
+              while (true) {
+                String myRandomQuote = getRandomQuote(BibleQuotes);
+                System.out.println("Random bible verse: " + myRandomQuote);
+                try {
+                  Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                  System.out.println("Error: InterruptedException caught.");
+                }
+              }
+            }
+
             // 
             else {
               System.out.println("Error: Invalid parameter supplied.");
-              System.out.println("Possible parameters: 'create', 'random', 'all'");
+              System.out.println("Possible parameters: 'create', 'random', 'all' , 'search', 'csearch', 'display'");
             }
           }
           
