@@ -1,0 +1,11 @@
+Functions
+-create
+-random
+-display all
+-search by quote
+-search by author
+-search by category
+-display by time delay and max iteration
+-add
+-delete
+-modify

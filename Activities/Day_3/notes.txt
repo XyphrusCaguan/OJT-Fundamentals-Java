@@ -1,0 +1,18 @@
+MemorableQuote Class
+-member var quoteText(String)
+
+
+MemorableQuotesMain Class
+
+
+
+MemorableQuotesDisplayShow
+-create constructor that accepts MemorableQuotesDisplayShow
+-create instance variables:
+*int delayBetweenQuotes
+*int maxQuotesToDisplay
+
+-create method: public void execute()
+*if maxQuotestoDisplay <= 0, run infinitely
+*if maxQuotestoDisplay > 0, end after displaying 
+maxQuotestoDisplay

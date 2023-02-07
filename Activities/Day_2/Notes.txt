@@ -1,0 +1,18 @@
+Java program
+- String ArrayList
+- content: "Title: Description"
+
+Functions
+* Display - display encoded array
+* Sort Ascending Order - display array content in ascending order from A-Z, 1-9
+* Sort Descending Order - display array content in ascending order from Z-A, 9-1
+
+
+
+Quote for Testing
+It is better to fail in originality than to succeed in imitation@Herman Melville
+
+Incomplete 
+-Memorables 10
+-Memorables 12
+ 

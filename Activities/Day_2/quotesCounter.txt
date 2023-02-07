@@ -1,0 +1,13 @@
+random {A dog is the only thing on earth that loves you more than he loves himself.
+--Josh Billings
+--Love=1}
+display {[The hours of folly are measured by the clock; but of wisdom, no clock can measure.
+--William Blake
+--Wisdom]
+=3, [The negative side of the American Dream comes when people pursue success at any cost, which in turn destroys the vision and the dream.
+--Azar Nafisi
+--Success]
+=1, [The love we give away is the only love we keep.
+--Elbert Hubbard
+--Love]
+=1}
