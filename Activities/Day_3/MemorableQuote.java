@@ -1,6 +1,11 @@
+import java.util.Map;
+import java.util.StringTokenizer;
+import java.util.stream.Collectors;
+
 class MemorableQuote {
     public String quoteText;
     public String reference;
+    public int countQuote;
 
     public MemorableQuote(String quoteText) {
         this.quoteText = quoteText;
@@ -42,6 +47,10 @@ class MemorableQuote {
 
         return lowerCaseQuoteText.contains(lowerCaseText) ||
                (lowerCaseReference != null && lowerCaseReference.contains(lowerCaseText));
+    }
+
+    public void count(){
+
     }
 }
 

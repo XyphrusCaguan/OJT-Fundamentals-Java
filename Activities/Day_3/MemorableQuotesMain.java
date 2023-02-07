@@ -36,11 +36,6 @@ public class MemorableQuotesMain {
             int timeDelay = Integer.parseInt(args[1]);
             int maxIteration = Integer.parseInt(args[2]);
             showData.execute(timeDelay, maxIteration);
-        } else if (args[0].equals("display2")) {
-            int timeDelay = Integer.parseInt(args[1]);
-            int maxIteration = Integer.parseInt(args[2]);
-            System.out.println(timeDelay + " " + maxIteration);
-            showData.secondExecute(timeDelay, maxIteration);
         } else {
             System.out.println("Unknown command.");
         }
